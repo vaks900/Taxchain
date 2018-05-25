@@ -1,4 +1,4 @@
-![Blockathon](C:/LaptopFiles/OfficeFiles/Training/AI/DataScience/PPT/TaxChain.png)
+![Blockathon](./TaxChain.png)
 
 # Tax Chain
 
@@ -6,7 +6,7 @@ Welcome to the Tax chain which is based on the [CorDapp tutorial](http://docs.co
 
 # The Tax Chain
 
-The Tax Chain implements a basic scenario where the tax payer wants to submit the tax, all his details will be prefilled from the distributed ledger, User has to acknowledge it.
+The Tax Chain implements a basic scenario where the tax payer wants to submit the tax, all his details will be pre-filled from the distributed ledger, User has to acknowledge it.
 
 * **Controller** which hosts the network map service and validating notary/government service.
 * **Node A** who is the Tax Payer
