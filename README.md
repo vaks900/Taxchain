@@ -2,7 +2,7 @@
 
 # Tax Chain
 
-Welcome to the Tax chain which is based on the [CorDapp tutorial](http://docs.corda.net/tutorial-cordapp.html) found on the Corda docsite.
+Welcome to the Tax chain  is based on the [CorDapp tutorial](http://docs.corda.net/tutorial-cordapp.html) found on the Corda docsite.
 
 # The Tax Chain
 
