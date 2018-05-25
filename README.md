@@ -1,4 +1,4 @@
-![Blockathon](./TaxChain.png)
+![Blockathon](./TaxChain.jpg)
 
 # Tax Chain
 
