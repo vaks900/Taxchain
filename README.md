@@ -21,7 +21,15 @@ You will need the following installed on your machine before you can start:
 * Latest version of [IntelliJ IDEA](https://www.jetbrains.com/idea/download/) (note the community edition is free)
 * [h2 web console](http://www.h2database.com/html/download.html)
   (download the "platform-independent zip")
-* [Anaconda](https://www.anaconda.com/download/) installed and availalbe on your path.
+* Install [Python](https://www.python.org/downloads/release/python-362/) (Download the installer).
+   choose Windows x86-64 executable installer  (use custom install options and choose all check boxes)
+* Run below commands to Install dependency python libraries 
+  pip3 install --upgrade tensorflow && pip install flask flask-jsonpify flask-sqlalchemy flask-restful && pip freeze && pip install pandas && pip install sklearn && pip install scipy
+  
+* After installation run below command to start TaxChainPrediction
+  python investment_server.py
+  
+* TaxChainPrediction RestService can be accessible in http://127.0.0.1:5000/invt  
 
 ## Getting Set Up
 
