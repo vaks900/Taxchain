@@ -23,13 +23,10 @@ You will need the following installed on your machine before you can start:
   (download the "platform-independent zip")
 * Install [Python](https://www.python.org/downloads/release/python-362/) (Download the installer).
    choose Windows x86-64 executable installer  (use custom install options and choose all check boxes)
-* Run below commands to Install dependency python libraries 
-  pip3 install --upgrade tensorflow && pip install flask flask-jsonpify flask-sqlalchemy flask-restful && pip freeze && pip install pandas && pip install sklearn && pip install scipy
-  
-* After installation run below command to start TaxChainPrediction
-  python investment_server.py
-  
-* TaxChainPrediction RestService can be accessible in http://127.0.0.1:5000/invt  
+
+Install dependency python libraries with :
+
+     pip3 install --upgrade tensorflow && pip install flask flask-jsonpify flask-sqlalchemy flask-restful && pip freeze && pip install pandas && pip install sklearn && pip install scipy
 
 ## Getting Set Up
 
@@ -185,6 +182,21 @@ paste it in to the `JDBC URL` field and click *Connect* (leave the default usern
 You will be presented with a web application that enumerates all the
 available tables and provides an interface for you to query them using SQL.
 
+## Interacting with TaxChainPrediction via Rest WebService
+
+To start , run command with:
+
+     python investment_server.py
+  
+TaxChainPrediction RestService can be accessible in http://127.0.0.1:5000/invt  
+
+To predict result , Access RestService endpoint and pass the input parameters in Endpoint URL as a QueryString 
+
+     e.g http://127.0.0.1:5000/invt/10/salarised  
+ Rest service will expect two input parameters to predict result (Age and Employment Category) and will return the predicted result in JSON format
+
+      e.g {"INVESTMENTTYPE":"MutualFund"}
+     
 ## Further reading
 
 Tutorials and developer docs for CorDapps, Corda are [here](https://docs.corda.net/tutorial-cordapp.html) and TensorFlow are [here](https://www.tensorflow.org/api_docs/)
