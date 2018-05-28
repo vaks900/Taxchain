@@ -20,7 +20,7 @@ api = Api(app)
 
 
 class InvestmentType(Resource):
-    def get(self, age_group):
+    def get(self, age_group , category):
         os.system('python investment_prediction.py')
         data = pd.read_csv("PREDICTION.csv")
         #converter = csvmapper.JSONConverter(data)
@@ -30,7 +30,7 @@ class InvestmentType(Resource):
             
     
 
-api.add_resource(InvestmentType, '/invt/<age_group>') # Route_4
+api.add_resource(InvestmentType, '/invt/<age_group>/<category>') # Route_4
 
 
 if __name__ == '__main__':
