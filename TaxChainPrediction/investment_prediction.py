@@ -9,10 +9,10 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn import preprocessing
 import tensorflow as tf
+import sys
 
 
 # In[43]:
-
 
 train_data = pd.read_csv("customer_investment.csv")
 
@@ -60,25 +60,34 @@ X_train, X_test, y_train, y_test = train_test_split(train_x_data,train_y_labels,
 
 #X_test = [30,Salarised]
 
+# input values
+age = int(sys.argv[1])
+category = sys.argv[2]
+
+#print(age)
+#print(category)
+
 X_test = {
-        'AGE': [70],
-        'CATEGORY': ['salarised'],
+        'AGE': [age],
+        'CATEGORY': [category],
     }
+
 X_test=pd.DataFrame(X_test)
-	
-	
-	
+
+
+
 # In[26]:
 
 
-org = tf.feature_column.categorical_column_with_hash_bucket("CATEGORY", hash_bucket_size=52)
-amount = tf.feature_column.numeric_column("AGE")
+category = tf.feature_column.categorical_column_with_hash_bucket("CATEGORY", hash_bucket_size=52)
+age = tf.feature_column.numeric_column("AGE")
+#tf.feature_column.numeric_column("AGE")
 
 
 # In[27]:
 
 
-feat_cols = [org,amount]
+feat_cols = [age , category]
 
 
 # In[28]:
