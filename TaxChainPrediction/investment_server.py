@@ -36,4 +36,4 @@ api.add_resource(InvestmentType, '/invt/<age_group>/<category>') # Route_4
 
 
 if __name__ == '__main__':
-     app.run()
+     app.run(host='0.0.0.0')

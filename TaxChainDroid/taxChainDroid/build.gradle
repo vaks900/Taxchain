@@ -31,4 +31,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation files('libs/android-async-http-1.4.4.jar')
     implementation files('libs/apache-httpcomponents-httpcore.jar')
+    implementation files('libs/json-simple-1.1.jar')
 }

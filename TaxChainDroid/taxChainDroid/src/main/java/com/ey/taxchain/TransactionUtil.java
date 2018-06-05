@@ -14,4 +14,12 @@ public class TransactionUtil {
 
         return connectionUrl;
     }
+
+    public static String convertStandardJSONString(String data_json) {
+        data_json = data_json.replaceAll("\\\\", "");
+        data_json = data_json.replace("\"{", "{");
+        data_json = data_json.replace("}\",", "},");
+        data_json = data_json.replace("}\"", "}");
+        return data_json;
+    }
 }
