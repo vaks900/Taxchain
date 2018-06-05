@@ -33,7 +33,7 @@ class PactContractTest {
     }
     @Test
     fun `Order amount must greater than zero`(){
-        val state = PactState(Pact("a01",0.0),
+        val state = PactState(Pact("Virat","900","29","Salaried","Mutual Funds","a01",0.0),
                 a.info.singleIdentity(),
                 b.info.singleIdentity(),
                 Instant.now()

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/app_title_background_img" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Submit Transaction" android:layout_centerVertical="true" style="@style/titleBarText" />
+        <ImageView android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/tm" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="1">
+
+            <TableRow>
+                <TextView android:textStyle="bold" android:gravity="start" android:padding="3.0dip" android:text="Category"  android:layout_weight="4" />
+                 <Spinner android:id="@+id/rt_category" android:layout_width="fill_parent" android:layout_weight="6"  android:layout_height="wrap_content"  android:entries="@array/category_arrays" />
+            </TableRow>
+            <TableRow>
+                <TextView android:textStyle="bold" android:gravity="start" android:padding="3.0dip" android:text="Customer ID" android:layout_weight="4" />
+                <EditText android:id="@+id/rt_cust_id" android:paddingRight="3.0dip" android:layout_weight="6"  android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789./\ " android:inputType="text" />
+            </TableRow>
+            <TableRow>
+                <TextView android:textStyle="bold" android:gravity="start" android:padding="3.0dip" android:text="Customer Name"  android:layout_weight="4" />
+                <EditText android:id="@+id/rt_cust_name" android:paddingRight="3.0dip"  android:layout_weight="6"  android:inputType="text" />
+            </TableRow>
+            <TableRow>
+                <TextView android:textStyle="bold" android:gravity="start" android:padding="3.0dip" android:text="Age"  android:layout_weight="4" />
+                <EditText android:id="@+id/rt_age" android:paddingRight="3.0dip"  android:layout_weight="6"  android:inputType="text" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:textStyle="bold" android:gravity="start"  android:layout_weight="4" android:padding="3.0dip" android:text="Investment Type" />
+                <Spinner android:id="@+id/rt_invst_type"  android:layout_weight="6" android:layout_width="fill_parent" android:layout_height="wrap_content"  android:entries="@array/investment_arrays"/>
+            </TableRow>
+
+            <TableRow android:paddingTop="5.0dip">
+                <TextView android:textStyle="bold" android:gravity="start" android:padding="3.0dip" android:text="Reference Number"  android:layout_weight="4" />
+                <EditText android:id="@+id/rt_reference_no" android:paddingRight="3.0dip" android:layout_weight="6"  android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789." android:inputType="text" />
+            </TableRow>
+
+
+            <TableRow>
+                <TextView android:textStyle="bold" android:gravity="start"  android:layout_weight="4" android:padding="3.0dip" android:text="Total Amount" />
+                <EditText android:id="@+id/rt_amount" android:layout_weight="6"  android:paddingRight="3.0dip" android:digits="1234567890." android:inputType="number" />
+            </TableRow>
+
+            <TableRow android:paddingTop="5.0dip">
+                <TextView android:textStyle="bold" android:gravity="start" android:padding="3.0dip" android:text="Remarks"  android:layout_weight="4" />
+                <EditText android:id="@+id/rt_remarks" android:paddingRight="3.0dip" android:layout_weight="6"  android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,()/ " android:inputType="text" />
+            </TableRow>
+
+            <TableRow android:gravity="center" android:paddingBottom="7.0dip">
+                <Button android:layout_gravity="center_horizontal" android:id="@+id/newcust_btn_clear" android:text="CLEAR" style="@style/btnStyle" android:onClick="onClear" />
+                <Button android:layout_gravity="center_horizontal" android:id="@+id/newcust_btn_save" android:text="Submit" style="@style/btnStyle" android:onClick="onPay"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

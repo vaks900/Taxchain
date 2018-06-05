@@ -31,6 +31,11 @@ data class PactState(val order: Pact,
     override fun generateMappedObject(schema: MappedSchema): PersistentState {
         return when (schema) {
             is PactSchemaV1 -> PactSchemaV1.PersistentPact(
+                    customerName = this.order.customerName,
+                    custId = this.order.custId,
+                    age = this.order.age,
+                    category = this.order.category,
+                    investmentType = this.order.investmentType,
                     sellerName = this.seller.name.toString(),
                     buyerName = this.buyer.name.toString(),
                     referenceNumber = this.order.referenceNumber,

@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">TaxChainDroid</string>
+    <string-array name="category_arrays">
+        <item>Salaried</item>
+        <item>Non-Salaried</item>
+    </string-array>
+
+    <string-array name="investment_arrays">
+        <item>Mutual Fund</item>
+        <item>Insurance</item>
+    </string-array>
+
 </resources>
