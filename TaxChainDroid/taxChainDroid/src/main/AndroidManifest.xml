@@ -33,7 +33,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.ey.taxchain.Activity_SubmitTransaction" android:configChanges="keyboardHidden|orientation" />
-        <activity android:name="com.ey.taxchain.Activity_Advisor" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.ey.taxchain.Activity_SubmitTransaction" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.ey.taxchain.Activity_Advisor" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.ey.taxchain.CustomerListViewActivity" android:windowSoftInputMode="stateHidden"/>
     </application>
 </manifest>

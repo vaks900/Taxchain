@@ -14,9 +14,7 @@ import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
 import org.apache.http.entity.StringEntity;
-import org.json.JSONArray;
 import org.json.JSONObject;
-import org.json.simple.parser.JSONParser;
 
 
 public class Activity_Advisor extends Activity {
@@ -41,7 +39,7 @@ public class Activity_Advisor extends Activity {
         StringEntity entity=null;
         System.out.println("Started");
         try{
-            String url="http://10.168.3.251:5000/invt/"+age.getText().toString()+"/"+category.getSelectedItem().toString().toLowerCase().replace(" ","");
+            String url="http://169.254.168.157:5000/invt/"+age.getText().toString()+"/"+category.getSelectedItem().toString();
             client.setTimeout(DEFAULT_TIMEOUT);
             client.get(url, new AsyncHttpResponseHandler() {
             @TargetApi(Build.VERSION_CODES.HONEYCOMB)
@@ -72,6 +70,9 @@ public class Activity_Advisor extends Activity {
 
             }
         });
+            Toast.makeText(this,  "Please Wait", Toast.LENGTH_LONG).show();
+            Toast.makeText(this,  "Please Wait", Toast.LENGTH_LONG).show();
+            Toast.makeText(this,  "Please Wait", Toast.LENGTH_LONG).show();
             Toast.makeText(this,  "Please Wait", Toast.LENGTH_LONG).show();
 
         }catch (Exception e){

@@ -1,73 +1,76 @@
 CATEGORY,AGE,INVESTMENTTYPE
-salaried,20,Insurance
-salaried,22,Insurance
-salaried,24,Mutualfund
-salaried,26,Mutualfund
-salaried,28,Mutualfund
-salaried,30,Mutualfund
-salaried,32,Mutualfund
-salaried,34,Mutualfund
-salaried,36,insurance
-salaried,38,insurance
-salaried,40,Mutualfund
-salaried,42,Insurance
-salaried,44,Insurance
-salaried,46,Mutualfund
-salaried,48,Mutualfund
-salaried,50,Mutualfund
-salaried,52,Mutualfund
-salaried,54,Mutualfund
-salaried,56,Mutualfund
-salaried,58,insurance
-salaried,59,insurance
-salaried,60,Mutualfund
-salaried,62,Insurance
-salaried,63,Insurance
-salaried,64,Mutualfund
-salaried,65,Mutualfund
-salaried,66,Mutualfund
-salaried,67,Mutualfund
-salaried,69,Mutualfund
-salaried,70,Mutualfund
-salaried,72,insurance
-salaried,74,insurance
-salaried,76,Mutualfund
-salaried,78,Insurance
-salaried,80,Insurance
-salaried,79,Mutualfund
-non-salaried,20,Insurance
-non-salaried,22,Insurance
-non-salaried,24,Mutualfund
-non-salaried,26,Mutualfund
-non-salaried,28,Mutualfund
-non-salaried,30,Mutualfund
-non-salaried,32,Mutualfund
-non-salaried,34,Mutualfund
-non-salaried,36,insurance
-non-salaried,38,insurance
-non-salaried,40,Mutualfund
-non-salaried,42,Insurance
-non-salaried,44,Insurance
-non-salaried,46,Mutualfund
-non-salaried,48,Mutualfund
-non-salaried,50,Mutualfund
-non-salaried,52,Mutualfund
-non-salaried,54,Mutualfund
-non-salaried,56,Mutualfund
-non-salaried,58,insurance
-non-salaried,59,insurance
-non-salaried,60,Mutualfund
-non-salaried,62,Insurance
-non-salaried,63,Insurance
-non-salaried,64,Mutualfund
-non-salaried,65,Mutualfund
-non-salaried,66,Mutualfund
-non-salaried,67,Mutualfund
-non-salaried,69,Mutualfund
-non-salaried,70,Mutualfund
-non-salaried,72,insurance
-non-salaried,74,insurance
-non-salaried,76,Mutualfund
-non-salaried,78,Insurance
-non-salaried,80,Insurance
-non-salaried,79,Mutualfund
+Salaried,20,Insurance
+Salaried,22,Insurance
+Salaried,24,Mutual Fund
+Salaried,26,Mutual Fund
+Salaried,28,Insurance
+Salaried,30,Mutual Fund
+Salaried,32,Mutual Fund
+Salaried,34,Mutual Fund
+Salaried,36,Insurance
+Salaried,38,Insurance
+Salaried,40,Mutual Fund
+Salaried,42,Insurance
+Salaried,44,Insurance
+Salaried,46,Mutual Fund
+Salaried,48,Insurance
+Salaried,50,Mutual Fund
+Salaried,52,Mutual Fund
+Salaried,54,Mutual Fund
+Salaried,56,Insurance
+Salaried,58,Insurance
+Salaried,59,Insurance
+Salaried,60,Mutual Fund
+Salaried,62,Insurance
+Salaried,63,Insurance
+Salaried,64,Mutual Fund
+Salaried,65,Mutual Fund
+Salaried,66,Mutual Fund
+Salaried,67,Mutual Fund
+Salaried,69,Mutual Fund
+Salaried,70,Insurance
+Salaried,72,Insurance
+Salaried,74,Insurance
+Salaried,76,Mutual Fund
+Salaried,78,Insurance
+Salaried,80,Insurance
+Salaried,79,Mutual Fund
+Non-Salaried,20,Insurance
+Non-Salaried,22,Insurance
+Non-Salaried,24,Mutual Fund
+Non-Salaried,26,Mutual Fund
+Non-Salaried,28,Mutual Fund
+Non-Salaried,30,Insurance
+Non-Salaried,32,Mutual Fund
+Non-Salaried,34,Mutual Fund
+Non-Salaried,36,Insurance
+Non-Salaried,38,Insurance
+Non-Salaried,40,Mutual Fund
+Non-Salaried,42,Insurance
+Non-Salaried,44,Insurance
+Non-Salaried,46,Mutual Fund
+Non-Salaried,48,Mutual Fund
+Non-Salaried,50,Insurance
+Non-Salaried,52,Mutual Fund
+Non-Salaried,54,Mutual Fund
+Non-Salaried,56,Mutual Fund
+Non-Salaried,58,Insurance
+Non-Salaried,59,Insurance
+Non-Salaried,60,Mutual Fund
+Non-Salaried,62,Insurance
+Non-Salaried,63,Insurance
+Non-Salaried,64,Mutual Fund
+Non-Salaried,65,Mutual Fund
+Non-Salaried,66,Insurance
+Non-Salaried,67,Mutual Fund
+Non-Salaried,69,Mutual Fund
+Non-Salaried,70,Mutual Fund
+Non-Salaried,72,Insurance
+Non-Salaried,74,Insurance
+Non-Salaried,76,Mutual Fund
+Non-Salaried,78,Insurance
+Non-Salaried,80,Insurance
+Non-Salaried,79,Mutual Fund
+Salaried,20,Mutual Fund
+Non-Salaried,99,Insurance
+Salaried,48,Insurance

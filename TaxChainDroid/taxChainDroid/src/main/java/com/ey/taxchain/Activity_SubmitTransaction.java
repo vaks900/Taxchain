@@ -2,6 +2,7 @@ package com.ey.taxchain;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -15,13 +16,14 @@ import com.loopj.android.http.AsyncHttpResponseHandler;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.message.BasicHeader;
 import org.apache.http.protocol.HTTP;
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Activity_SubmitTransaction extends Activity {
-    EditText cust_Name,cust_Id,age,referenceNo,amt;
+    EditText cust_Name,cust_Id,age,referenceNo,amt,remarks;
     Spinner investmentType,category;
     TransactionUtil transactionUtil=new TransactionUtil();
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,7 @@ public class Activity_SubmitTransaction extends Activity {
         age = ((EditText) findViewById(R.id.rt_age));
         referenceNo = ((EditText) findViewById(R.id.rt_reference_no));
         amt = ((EditText) findViewById(R.id.rt_amount));
+        remarks = ((EditText) findViewById(R.id.rt_remarks));
         investmentType = ((Spinner) findViewById(R.id.rt_invst_type));
         category = ((Spinner) findViewById(R.id.rt_category));
 
@@ -98,9 +101,18 @@ public class Activity_SubmitTransaction extends Activity {
         investmentType.setSelection(0);
         category.invalidate();
         category.setSelection(0);
+        remarks.invalidate();
+        remarks.setText("");
     }
 
     public void onClear(View v){
         clear();
+    }
+
+
+    public void onView(View v){
+
+        Intent intent = new Intent(Activity_SubmitTransaction.this, CustomerListViewActivity.class);
+        startActivity(intent);
     }
 }

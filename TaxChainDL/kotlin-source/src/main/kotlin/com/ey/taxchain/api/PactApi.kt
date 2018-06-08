@@ -16,6 +16,10 @@ import java.time.Instant
 import javax.ws.rs.*
 import javax.ws.rs.core.MediaType
 import javax.ws.rs.core.Response
+import java.io.IOException
+import java.io.FileWriter
+
+
 
 val NOTARY_NAME = "Controller"
 val NETWORK_MAP_NAME = "Network Map Service"
@@ -72,12 +76,15 @@ class PactApi (val services: CordaRPCOps) {
 
         val buyer = services.wellKnownPartyFromX500Name(buyerName) ?:
         return Response.status(Response.Status.BAD_REQUEST).entity("Party named $buyerName cannot be found.\n").build()
+
+        generateCsvFile(order.category,order.age,order.investmentType)
         val state = PactState(
                 order,
                 seller,
                 buyer,
                 date = Instant.now()
         )
+
         val (status, msg) = try {
             val flowHandle = services.startTrackedFlow(CreatePactFlow::Initiator, state, seller)
             flowHandle.progress.subscribe { println(">> $it") }
@@ -89,4 +96,26 @@ class PactApi (val services: CordaRPCOps) {
         }
         return Response.status(status).entity(msg).build()
     }
+
+    private fun generateCsvFile(category: String, age: String, investmentTtype: String) {
+        try {
+            val writer = FileWriter("C:\\Blockathon\\TaxChain\\TaxChainPrediction\\customer_investment.csv", true)
+            writer.append(category)
+            writer.append(',')
+            writer.append(age)
+            writer.append(',')
+            writer.append(investmentTtype)
+            writer.append('\n')
+
+
+            //generate whatever data you want
+
+            writer.flush()
+            writer.close()
+        } catch (e: IOException) {
+            e.printStackTrace()
+        }
+
+    }
+
 }

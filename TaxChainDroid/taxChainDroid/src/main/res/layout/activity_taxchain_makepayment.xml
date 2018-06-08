@@ -107,7 +107,29 @@
 
     </TableLayout>
 
-    <ScrollView
+    <TableLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="fill_parent"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        >
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="3.0dip">
+
+
+
+            <Button
+                android:id="@+id/makepayact_viewTransact"
+                style="@style/btnStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:gravity="center_horizontal"
+                android:onClick="onTransact"
+                android:text="View Transactions" />
+
+        </TableRow>
+    </TableLayout>
 </LinearLayout>
